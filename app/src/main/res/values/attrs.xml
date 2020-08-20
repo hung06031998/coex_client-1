@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CalendarView">
+        <!--<attr name="colorBar" format="color|reference" />-->
+        <!--<attr name="contentBar" format="color|reference"/>-->
+        <!--<attr name="barTitle" format="string" localization="suggested"/>-->
+        <!--<attr name="message" format="string" localization="suggested"/>-->
+        <attr name="height" format="dimension"/>
+    </declare-styleable>
+</resources>

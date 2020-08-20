@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_booking_status_bar_height">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_booking_status_bar_height">
+
+            <TextView
+                style="@style/title_14_pink_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/activity_p_and_r_title" />
+
+            <ImageView
+                android:id="@+id/activity_p_and_r_btn_back"
+                android:layout_width="@dimen/activity_booking_btn_back_height"
+                android:layout_height="@dimen/activity_booking_btn_back_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_booking_btn_back_margin"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_p_and_r_layout_1"
+        android:layout_marginTop="@dimen/activity_p_and_r_layout_margin"
+        android:layout_marginBottom="@dimen/activity_p_and_r_layout_margin">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_subtract" />
+
+        <TextView
+            android:id="@+id/activity_p_and_r_txt_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_bold"
+            android:text="--- POINT"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_p_and_r_btn_exchange_to_coin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_booking_button_hieght"
+        android:layout_marginLeft="@dimen/text_margin_left"
+        android:layout_marginTop="@dimen/text_margin_top"
+        android:layout_marginRight="@dimen/text_margin_left"
+
+        android:background="@drawable/layout_cover_dialog_2">
+
+        <TextView
+            style="@style/title_14_pink_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_p_and_r_btn_exchange_to_card"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_line"
+                android:layout_marginTop="@dimen/activity_p_and_r_line_margin"
+                android:background="@color/silver" />
+
+            <TextView
+                style="@style/title_13_black_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_margin_left"
+                android:layout_marginTop="@dimen/text_margin_top"
+                android:text="@string/activity_p_and_r_txt_title_earn_point"
+                android:textSize="14sp" />
+
+            <TextView
+                style="@style/title_13_silver_black_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_margin_left"
+                android:layout_marginTop="@dimen/description_margin_top"
+                android:layout_marginRight="@dimen/text_margin_left"
+                android:maxLines="2"
+                android:text="@string/activity_p_and_r_txt_descroption_earn_point" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_line"
+                android:layout_marginTop="@dimen/activity_p_and_r_line_margin"
+                android:background="@color/silver" />
+
+            <TextView
+                style="@style/title_13_black_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_margin_left"
+                android:layout_marginTop="@dimen/text_margin_top"
+                android:text="@string/activity_p_and_r_txt_title_card"
+                android:textSize="14sp" />
+
+            <TextView
+                style="@style/title_13_silver_black_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_margin_left"
+                android:layout_marginTop="@dimen/description_margin_top"
+                android:layout_marginRight="@dimen/text_margin_left"
+                android:maxLines="2"
+                android:text="@string/activity_p_and_r_txt_descroption_card" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

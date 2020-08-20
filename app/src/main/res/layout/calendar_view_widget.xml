@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/flPrevious"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imgPrevious"
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/vector_left" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tvTitleCalendar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="Nguyen Thien Bao"
+            android:textColor="@color/black" />
+
+        <FrameLayout
+            android:id="@+id/flNext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imgNext"
+                android:layout_width="10dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/vector_right" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/lnDayName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="MON" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="TUE" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="WED" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="THU" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="FRI" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="SAT" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="SUN" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grvDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="7"></GridView>
+</LinearLayout>

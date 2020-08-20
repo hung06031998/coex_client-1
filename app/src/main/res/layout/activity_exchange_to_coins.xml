@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_booking_status_bar_height">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_booking_status_bar_height">
+
+            <TextView
+                style="@style/title_14_pink_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/activity_p_and_r_btn_exchange_to_card" />
+
+            <ImageView
+                android:id="@+id/activity_exchange_to_coin_btn_back"
+                android:layout_width="@dimen/activity_booking_btn_back_height"
+                android:layout_height="@dimen/activity_booking_btn_back_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_booking_btn_back_margin"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/title_13_black_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:layout_marginTop="@dimen/text_margin_top"
+            android:text="@string/activity_exhcnage_to_coin_txt_exting_point"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/activity_exchange_to_coin_txt_point"
+            style="@style/title_14_pink_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:layout_marginTop="@dimen/text_margin_top"
+            android:text="--- point"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_line"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:layout_marginTop="@dimen/activity_p_and_r_line_margin"
+            android:layout_marginRight="@dimen/text_margin_left"
+            android:background="@color/silver" />
+
+        <TextView
+            style="@style/title_13_black_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:layout_marginTop="@dimen/text_margin_top"
+            android:text="@string/activity_exhcnage_to_coin_txt_exting_coint"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/activity_exchange_to_coin_txt_coin"
+            style="@style/title_14_pink_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:layout_marginTop="@dimen/text_margin_top"
+            android:text="--- coins"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_line"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:layout_marginTop="@dimen/activity_p_and_r_line_margin"
+            android:layout_marginRight="@dimen/text_margin_left"
+            android:background="@color/silver" />
+
+        <TextView
+            style="@style/title_13_black_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:layout_marginTop="@dimen/text_margin_top"
+            android:text="@string/activity_exchange_to_coin_txt_add_point"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/title_13_silver_black_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:layout_marginTop="@dimen/description_margin_top"
+            android:layout_marginRight="@dimen/text_margin_left"
+            android:maxLines="2"
+            android:text="@string/activity_exchange_to_coin_txt_add_point_des" />
+
+        <TextView
+            style="@style/title_12_blue_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:layout_marginTop="@dimen/description_margin_top"
+            android:layout_marginRight="@dimen/text_margin_left"
+            android:text="@string/activity_exchange_to_coin_txt_policy" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin_left"
+        android:layout_marginTop="@dimen/text_margin_top_higher"
+        android:layout_marginRight="@dimen/text_margin_left"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/linear_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_booking_edittext_height"
+            android:layout_marginTop="@dimen/text_margin_top"
+            android:background="@drawable/bg_item_schedule"
+            android:orientation="horizontal"
+            android:weightSum="12"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ups">
+
+            <View
+                android:id="@+id/layout_1"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp" />
+
+            <EditText
+                android:id="@+id/activity_exchange_to_coin_edt_point"
+                style="@style/title_13_black_regular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="0.0"
+                android:inputType="numberDecimal"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:id="@+id/layout_2"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="Point(s)"
+                android:textAlignment="center" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin_top"
+            android:src="@drawable/ic_vector_down" />
+
+        <TextView
+            android:id="@+id/activity_exchange_to_coin_edt_coin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_booking_edittext_height"
+            android:layout_marginTop="@dimen/text_margin_top"
+            android:background="@drawable/bg_item_schedule"
+            android:fontFamily="@font/roboto_light"
+            android:gravity="right"
+            android:hint="Coin(s)"
+            android:inputType="number"
+            android:paddingTop="8dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/activity_exchange_to_coin_btn_exchange"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_booking_button_hieght"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/text_margin_top_higher"
+            android:background="@drawable/btn_normal_background"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/activity_exchange_to_coin_txt_exhange_to_coin"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_detail_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/activity_detail_layout_img"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/activity_detail_coex_main_image_height"
+            android:background="@drawable/bg_no_image_big">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/activity_detail_view_paper"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/activity_detail_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/marginDetailCoo2" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/activity_detail_btn_back"
+        android:layout_width="@dimen/activity_detail_coex_back_height"
+        android:layout_height="@dimen/activity_detail_coex_back_height"
+        android:layout_marginLeft="@dimen/activity_detail_coex_back_margin_left"
+        android:layout_marginTop="@dimen/activity_detail_coex_back_margin"
+        android:src="@drawable/ic_arrow_back_black_24dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_detail_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_margin_left"
+                    android:layout_marginRight="@dimen/activity_detail_coex_main_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/item_schedule_txt_title"
+                        style="@style/title_14_pink_bold"
+                        android:layout_marginTop="@dimen/activity_detail_coex_txt_title_margin_top"
+                        android:text="COEX Working" />
+
+                    <TextView
+                        android:id="@+id/item_schedule_txt_description"
+                        style="@style/title_13_silver_black_regular"
+                        android:layout_marginTop="@dimen/activity_detail_coex_txt_margin_top"
+                        android:lines="2"
+                        android:text="No.1 Pham Van Bach, Yen Hoa, Cau Giay, Ha Noi." />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fragment_schedule_layout_show_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_detail_coex_hight_space"
+                    android:layout_marginLeft="@dimen/activity_p_and_r_line_margin"
+                    android:layout_marginTop="@dimen/activity_detail_coex_txt_title_margin_top"
+                    android:layout_marginRight="@dimen/activity_p_and_r_line_margin"
+                    android:background="@color/silver" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/title_14_pink_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text_margin_left"
+                        android:layout_marginTop="@dimen/text_margin_top"
+                        android:text="@string/fragment_schedule_txt_title_info_booking"
+                        android:textColor="@color/black" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text_margin_left"
+                        android:layout_marginTop="@dimen/text_margin_text"
+                        android:layout_marginRight="@dimen/text_margin_left">
+
+                        <TextView
+                            style="@style/title_13_silver_black_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity_schedule_txt_number_of_guest" />
+
+                        <TextView
+                            android:id="@+id/item_schedule_txt_number_of_guest"
+                            style="@style/title_13_black_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="7 Guest(s)" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text_margin_left"
+                        android:layout_marginTop="@dimen/text_margin_text"
+                        android:layout_marginRight="@dimen/text_margin_left">
+
+                        <TextView
+                            style="@style/title_13_silver_black_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity_schedule_txt_time_of_appointment" />
+
+                        <TextView
+                            android:id="@+id/item_schedule_txt_time_appointment"
+                            style="@style/title_13_black_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="08:00 - March 07, 2020" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text_margin_left"
+                        android:layout_marginTop="@dimen/text_margin_text"
+                        android:layout_marginRight="@dimen/text_margin_left">
+
+                        <TextView
+                            style="@style/title_13_silver_black_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity_schedule_txt_duration" />
+
+                        <TextView
+                            android:id="@+id/item_schedule_txt_duration"
+                            style="@style/title_13_black_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="3 days" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text_margin_left"
+                        android:layout_marginTop="@dimen/text_margin_text"
+                        android:layout_marginRight="@dimen/text_margin_left">
+
+                        <TextView
+                            style="@style/title_13_silver_black_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activity_schedule_txt_tran_id" />
+
+                        <TextView
+                            android:id="@+id/item_schedule_txt_booking_refe"
+                            style="@style/title_13_black_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="7 Guest(s)" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_detail_coex_hight_space"
+                    android:layout_marginLeft="@dimen/activity_p_and_r_line_margin"
+                    android:layout_marginTop="@dimen/text_margin_top"
+                    android:layout_marginRight="@dimen/activity_p_and_r_line_margin"
+                    android:background="@color/silver" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_margin_left"
+                    android:layout_marginRight="@dimen/text_margin_left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/title_14_pink_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top"
+                        android:text="@string/fragment_schedule_txt_total_amount"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/item_schedule_txt_cost"
+                        style="@style/title_12_blue_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_text"
+                        android:text="2.000.000 VND" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_detail_coex_hight_space"
+                    android:layout_marginLeft="@dimen/activity_p_and_r_line_margin"
+                    android:layout_marginTop="@dimen/text_margin_top"
+                    android:layout_marginRight="@dimen/activity_p_and_r_line_margin"
+                    android:background="@color/silver" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_margin_left"
+                    android:layout_marginRight="@dimen/text_margin_left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/title_14_pink_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top"
+                        android:text="@string/fragment_schedule_txt_status"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/item_schedule_txt_status"
+                        style="@style/title_12_blue_cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_text"
+                        android:text="2.000.000 VND" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_detail_coex_hight_space"
+                    android:layout_marginLeft="@dimen/activity_p_and_r_line_margin"
+                    android:layout_marginTop="@dimen/text_margin_top"
+                    android:layout_marginRight="@dimen/activity_p_and_r_line_margin"
+                    android:background="@color/silver" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_margin_left"
+                    android:layout_marginRight="@dimen/text_margin_left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/title_14_pink_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top"
+                        android:text="@string/fragment_schedule_txt_q_r_code"
+                        android:textColor="@color/black" />
+
+                    <com.upit.coex.user.template.widget.QRCode
+                        android:id="@+id/item_schedule_img_qr_code"
+                        style="@style/title_12_blue_cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="@dimen/text_margin_text"
+                        android:src="@drawable/ic_qr_code" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_detail_coex_hight_space"
+                    android:layout_marginLeft="@dimen/activity_p_and_r_line_margin"
+                    android:layout_marginTop="@dimen/text_margin_top"
+                    android:layout_marginRight="@dimen/activity_p_and_r_line_margin"
+                    android:background="@color/silver" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_detail_coex_main_margin"
+                    android:layout_marginRight="@dimen/activity_detail_coex_main_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/title_13_black_regular"
+                        android:layout_marginTop="@dimen/activity_detail_coex_txt_title_margin_top"
+                        android:text="@string/activity_detail_coex_about_space"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/item_schedule_txt_about"
+                        style="@style/title_13_silver_black_regular"
+                        android:layout_marginTop="@dimen/activity_detail_coex_txt_margin_top"
+                        android:lines="2"
+                        android:text="simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_detail_coex_hight_space"
+                    android:layout_marginLeft="@dimen/activity_p_and_r_line_margin"
+                    android:layout_marginTop="@dimen/text_margin_top"
+                    android:layout_marginRight="@dimen/activity_p_and_r_line_margin"
+                    android:background="@color/silver" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_detail_coex_main_detail_height"
+                    android:layout_marginLeft="@dimen/activity_detail_coex_main_margin"
+                    android:layout_marginTop="@dimen/activity_detail_coex_txt_title_margin_top"
+                    android:layout_marginRight="@dimen/activity_detail_coex_main_margin"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp">
+
+                        <TextView
+                            style="@style/title_13_black_regular"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/detail_coex_type_1_image_margin"
+                            android:text="@string/activity_detail_coex_our_service"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/detail_coex_weight"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:id="@+id/item_schedule_item_wifi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/text_margin_left">
+
+                                <ImageView
+                                    android:id="@+id/detail_type_2_wifi"
+                                    android:layout_width="@dimen/activity_detail_coex_img_item_height"
+                                    android:layout_height="@dimen/activity_detail_coex_img_item_height"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_wifi" />
+
+                                <TextView
+                                    style="@style/title_13_silver_black_regular"
+                                    android:layout_centerInParent="true"
+                                    android:layout_margin="@dimen/detail_coex_type_2_item_margin"
+                                    android:layout_toRightOf="@id/detail_type_2_wifi"
+                                    android:text="@string/detail_coex_wifi" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/item_schedule_item_drink"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/text_margin_left">
+
+                                <ImageView
+                                    android:id="@+id/detail_type_2_drink"
+                                    android:layout_width="@dimen/activity_detail_coex_img_item_height"
+                                    android:layout_height="@dimen/activity_detail_coex_img_item_height"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_drink" />
+
+                                <TextView
+                                    style="@style/title_13_silver_black_regular"
+                                    android:layout_centerInParent="true"
+                                    android:layout_margin="@dimen/detail_coex_type_2_item_margin"
+                                    android:layout_toRightOf="@id/detail_type_2_drink"
+                                    android:text="@string/detail_coex_drink" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/item_schedule_item_printer"
+                                android:layout_width="@dimen/activity_detail_coex_main_weight"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/detail_coex_type_2_item_height"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/detail_type_2_printer"
+                                    android:layout_width="@dimen/activity_detail_coex_img_item_height"
+                                    android:layout_height="@dimen/activity_detail_coex_img_item_height"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_printer" />
+
+                                <TextView
+                                    style="@style/title_13_silver_black_regular"
+                                    android:layout_centerInParent="true"
+                                    android:layout_margin="@dimen/detail_coex_type_2_item_margin"
+                                    android:layout_toRightOf="@id/detail_type_2_printer"
+                                    android:text="@string/detail_coex_printer" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/detail_coex_weight"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:id="@+id/item_schedule_item_con_call"
+                                android:layout_width="@dimen/activity_detail_coex_main_weight"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2">
+
+                                <ImageView
+                                    android:id="@+id/detail_type_2_conversion_call"
+                                    android:layout_width="@dimen/activity_detail_coex_img_item_height"
+                                    android:layout_height="@dimen/activity_detail_coex_img_item_height"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_conversion_call" />
+
+                                <TextView
+                                    style="@style/title_13_silver_black_regular"
+                                    android:layout_centerInParent="true"
+                                    android:layout_margin="@dimen/detail_coex_type_2_item_margin"
+                                    android:layout_toRightOf="@id/detail_type_2_conversion_call"
+                                    android:text="@string/detail_coex_conversion_call" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/item_schedule_item_air_con"
+                                android:layout_width="@dimen/activity_detail_coex_main_weight"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/detail_coex_type_2_item_height"
+                                android:layout_weight="3">
+
+                                <ImageView
+                                    android:id="@+id/detail_type_2_air_conditioning"
+                                    android:layout_width="@dimen/activity_detail_coex_img_item_height"
+                                    android:layout_height="@dimen/activity_detail_coex_img_item_height"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_air_conditioning" />
+
+                                <TextView
+                                    style="@style/title_13_silver_black_regular"
+                                    android:layout_centerInParent="true"
+                                    android:layout_margin="@dimen/detail_coex_type_2_item_margin"
+                                    android:layout_toRightOf="@id/detail_type_2_air_conditioning"
+                                    android:text="@string/detail_coex_air_conditioning" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_detail_coex_hight_space"
+                    android:layout_marginLeft="@dimen/activity_p_and_r_line_margin"
+                    android:layout_marginTop="@dimen/text_margin_top"
+                    android:layout_marginRight="@dimen/activity_p_and_r_line_margin"
+                    android:background="@color/silver" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_margin_left"
+                    android:layout_marginRight="@dimen/text_margin_left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/title_14_pink_bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top"
+                        android:text="@string/fragment_schedule_txt_style_room"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/text_margin_top"
+                        android:background="@drawable/bg_item_style_room_background"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/item_style_room_image"
+                            android:layout_width="@dimen/item_style_room_image_height"
+                            android:layout_height="@dimen/item_style_room_image_height"
+                            android:layout_margin="@dimen/item_space_room_img_margin"
+                            android:background="@drawable/ic_nav_home" />
+
+                        <TextView
+                            android:id="@+id/item_schedule_txt_room_name"
+                            style="@style/title_13_black_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/item_space_room_img_margin"
+                            android:layout_marginBottom="@dimen/item_space_room_img_margin"
+                            android:text="Share room" />
+
+                        <TextView
+                            android:id="@+id/item_schedule_txt_room_description"
+                            style="@style/title_13_silver_black_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/item_space_room_img_margin"
+                            android:layout_marginRight="@dimen/item_space_room_img_margin"
+                            android:maxLines="4"
+                            android:text="you will seating with other team in the big room" />
+
+                        <TextView
+                            android:id="@+id/item_schedule_txt_room_cost"
+                            style="@style/title_12_blue_cost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/item_space_room_img_margin"
+                            android:text="200.00 VND/ hour/ 1 person" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/activity_detail_payment_layout"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/confirm_dialog_txt_description"
+                        android:layout_marginLeft="@dimen/dialog_margin"
+                        android:layout_marginTop="@dimen/text_margin_top"
+                        android:layout_marginRight="@dimen/dialog_margin">
+
+                        <Button
+                            android:id="@+id/item_schedule_btn_delete"
+                            style="@style/title_13_black_regular"
+                            android:layout_width="@dimen/detail_coex_weight"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/cancel_button_normal"
+                            android:text="@string/cancel" />
+
+                        <Button
+                            android:id="@+id/item_schedule_btn_edit"
+                            style="@style/title_13_black_regular"
+                            android:layout_width="@dimen/detail_coex_weight"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="6dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/normal_button_normal"
+                            android:text="@string/edit"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/confirm_dialog_txt_description"
+                        android:layout_marginLeft="@dimen/dialog_margin"
+                        android:layout_marginTop="@dimen/text_margin_top"
+                        android:layout_marginRight="@dimen/dialog_margin">
+
+                        <Button
+                            android:id="@+id/item_schedule_btn_vnpay_payment"
+                            style="@style/title_13_black_regular"
+                            android:layout_width="@dimen/detail_coex_weight"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/normal_button_normal"
+                            android:text="@string/vnpay_payment"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/confirm_dialog_txt_description"
+                        android:layout_marginLeft="@dimen/dialog_margin"
+                        android:layout_marginTop="@dimen/text_margin_top"
+                        android:layout_marginRight="@dimen/dialog_margin"
+                        android:layout_marginBottom="@dimen/dialog_margin_bottom">
+
+                        <Button
+                            android:id="@+id/item_schedule_btn_zalo_payment"
+                            style="@style/title_13_black_regular"
+                            android:layout_width="@dimen/detail_coex_weight"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/normal_button_normal"
+                            android:text="@string/zalo_payment"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_show_loading"
+                android:layout_marginTop="@dimen/dialog_margin_bottom"
+                android:layout_marginBottom="@dimen/dialog_margin_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ProgressBar
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/activity_detail_payment_done"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dialog_margin"
+                    android:layout_marginTop="@dimen/text_margin_top"
+                    android:layout_marginRight="@dimen/dialog_margin"
+                    android:layout_marginBottom="@dimen/dialog_margin_bottom">
+
+                    <Button
+                        style="@style/title_13_black_regular"
+                        android:layout_width="@dimen/detail_coex_weight"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/normal_button_normal"
+                        android:text="@string/payment_done"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

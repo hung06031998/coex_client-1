@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screen.profile.ProfileActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/activity_profile_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_booking_status_bar_height">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_booking_status_bar_height">
+
+            <TextView
+                style="@style/title_14_pink_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/activity_profile_title" />
+
+            <ImageView
+                android:id="@+id/activity_profile_btn_back"
+                android:layout_width="@dimen/activity_booking_btn_back_height"
+                android:layout_height="@dimen/activity_booking_btn_back_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_booking_btn_back_margin"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:id="@+id/activity_profile_txt_edit_profile"
+                style="@style/title_12_blue_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_booking_btn_back_margin"
+                android:text="@string/activity_profile_txt_edit_profile"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_profile_layout_2_height">
+
+        <ImageView
+            android:layout_width="@dimen/activity_profile_img_avatar_height"
+            android:layout_height="@dimen/activity_profile_img_avatar_height"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_ellipse_20" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_line"
+        android:layout_marginTop="@dimen/profile_activity_margin_line_1"
+        android:background="@color/silver" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_profile_txt_name"
+            style="@style/title_16_black_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STORM NGUYEN TIEN DUNG" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_line"
+            android:background="@color/silver" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/title_16_black_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_profile_txt_email"
+                android:textColor="@color/silver_black" />
+
+            <TextView
+                android:id="@+id/activity_profile_txt_email"
+                style="@style/title_16_black_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/profile_txt_margin_right"
+                android:text="stormNguyen@gmail.com" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_line"
+            android:background="@color/silver" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/title_16_black_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_profile_txt_phone_number"
+                android:textColor="@color/silver_black" />
+
+            <TextView
+                android:id="@+id/activity_profile_txt_phone_number"
+                style="@style/title_16_black_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/profile_txt_margin_right"
+                android:text="+84 123 456 789" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_line"
+            android:background="@color/silver" />
+
+        <TextView
+            android:id="@+id/activity_profile_txt_change_password"
+            style="@style/title_16_black_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_profile_txt_change_password"
+            android:textColor="@color/blue" />
+
+    </LinearLayout>
+
+</LinearLayout>

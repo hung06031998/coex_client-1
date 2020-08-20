@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_booking_status_bar_height">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_booking_status_bar_height">
+
+            <TextView
+                style="@style/title_14_pink_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/fragment_schedule_txt_title" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.upit.coex.user.template.widget.CalendarView
+        android:id="@+id/fragment_schedule_calender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_margin_left"
+        android:layout_marginTop="@dimen/dialog_margin"
+        android:layout_marginRight="@dimen/text_margin_left" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/fragment_schedule_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_detail_coex_hight_space"
+                        android:background="#e4e4e4" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/fragmetn_schedule_rcy_item"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="@dimen/text_margin_left"
+                        android:layout_marginRight="@dimen/text_margin_left"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_schedule_show_nothing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/activity_detail_coex_hight_space"
+                        android:background="@color/silver" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_blank" />
+
+                        <TextView
+                            style="@style/title_13_silver_black_regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="No Booking"
+                            android:textSize="22sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

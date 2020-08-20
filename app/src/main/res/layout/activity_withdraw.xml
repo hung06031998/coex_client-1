@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_booking_status_bar_height">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_booking_status_bar_height">
+
+            <ImageView
+                android:id="@+id/activity_withdraw_btn_back"
+                android:layout_width="@dimen/activity_booking_btn_back_height"
+                android:layout_height="@dimen/activity_booking_btn_back_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_booking_btn_back_margin"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                style="@style/title_14_pink_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/activity_withdraw_txt_title" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_p_and_r_layout_1"
+        android:layout_marginTop="@dimen/activity_p_and_r_layout_margin"
+        android:layout_marginBottom="@dimen/activity_p_and_r_layout_margin">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_subtract" />
+
+        <TextView
+            android:id="@+id/activity_withdraw_txt_show_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_bold"
+            android:text="--- COIN"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:layout_marginRight="@dimen/text_margin_left"
+            android:layout_marginBottom="@dimen/text_margin_top"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_line"
+                android:layout_marginTop="@dimen/activity_p_and_r_line_margin"
+                android:background="@color/silver" />
+
+            <TextView
+                style="@style/title_13_black_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin_top"
+                android:text="@string/activity_withdraw_txt_add_point"
+                android:textSize="14sp" />
+
+            <TextView
+                style="@style/title_13_silver_black_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/description_margin_top"
+                android:maxLines="2"
+                android:text="@string/activity_withdraw_txt_add_point_des" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_line"
+                android:layout_marginTop="@dimen/activity_p_and_r_line_margin"
+                android:background="@color/silver" />
+
+            <RelativeLayout
+                android:id="@+id/linear_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_booking_edittext_height"
+                android:layout_marginTop="@dimen/text_margin_top"
+                android:background="@drawable/bg_item_schedule"
+                android:orientation="horizontal"
+                android:weightSum="12"
+                app:layout_constraintTop_toBottomOf="@+id/txt_ups">
+
+                <View
+                    android:id="@+id/layout_1"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:paddingRight="10dp" />
+
+                <EditText
+                    android:id="@+id/activity_withdraw_edt_coin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="0.0"
+                    style="@style/title_13_black_regular"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center" />
+
+
+                <TextView
+                    android:id="@+id/layout_2"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/roboto_bold"
+                    android:gravity="center_vertical"
+                    android:paddingRight="10dp"
+                    android:text="Coin(s)"
+                    android:textAlignment="center" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin_top"
+                android:src="@drawable/ic_vector_down" />
+
+            <TextView
+                android:id="@+id/activity_withdraw_txt_eth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_booking_edittext_height"
+                android:layout_marginTop="@dimen/text_margin_top"
+                android:background="@drawable/bg_item_schedule"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="right"
+                android:hint="ETH(s)"
+                android:inputType="number"
+                android:paddingTop="8dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_line"
+                android:layout_marginTop="@dimen/activity_p_and_r_line_margin"
+                android:background="@color/silver" />
+
+            <TextView
+                style="@style/title_13_black_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin_top"
+                android:text="@string/activity_withdraw_txt_des"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/nice_spinner"
+                style="@style/title_13_black_regular"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/text_margin_top"
+                android:background="@drawable/bg_item_schedule"
+                android:gravity="center"
+                android:hint="Select address" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_withdraw_btn_add_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_booking_button_hieght"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:layout_marginRight="@dimen/text_margin_left"
+            android:layout_marginBottom="@dimen/text_margin_top"
+            android:background="@drawable/layout_cover_dialog_2">
+
+            <TextView
+                style="@style/title_14_pink_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/activity_withdraw_btn_withdraw"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_detail_webview_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/activity_booking_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_booking_status_bar_height">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_booking_status_bar_height">
+
+            <TextView
+                style="@style/title_14_pink_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/activity_vnpay_title" />
+
+            <ImageView
+                android:id="@+id/activity_vnpay_btn_back_webview"
+                android:layout_width="@dimen/activity_booking_btn_back_height"
+                android:layout_height="@dimen/activity_booking_btn_back_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_booking_btn_back_margin"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <WebView
+        android:layout_below="@id/activity_booking_layout_1"
+        android:id="@+id/vnpay_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+    </WebView>
+</RelativeLayout>

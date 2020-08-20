@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screen.profile.ProfileActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_booking_status_bar_height">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_booking_status_bar_height">
+
+            <TextView
+                android:id="@+id/activity_edit_profile_txt_title"
+                style="@style/title_14_pink_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/activity_edit_profile_title" />
+
+            <ImageView
+                android:id="@+id/activity_edit_profile_btn_back"
+                android:layout_width="@dimen/activity_booking_btn_back_height"
+                android:layout_height="@dimen/activity_booking_btn_back_height"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_booking_btn_back_margin"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_booking_margin"
+        android:layout_marginRight="@dimen/activity_booking_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_edit_profile_txt_1"
+            style="@style/title_13_black_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_detail_coex_back_margin_left"
+            android:layout_marginBottom="@dimen/activity_detail_coex_back_margin_left"
+            android:text="@string/activity_edit_profile_txt_name" />
+
+        <EditText
+            android:id="@+id/activity_edit_profile_edt_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_booking_edittext_height"
+            android:background="@drawable/edt_background"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/activity_edit_profile_hint_name"
+            android:paddingLeft="20dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/activity_edit_profile_txt_title_2"
+            style="@style/title_13_black_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_detail_coex_back_margin_left"
+            android:layout_marginBottom="@dimen/activity_detail_coex_back_margin_left"
+            android:text="@string/activity_edit_profile_txt_phone" />
+
+        <EditText
+            android:id="@+id/activity_edit_profile_edt_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_booking_edittext_height"
+            android:layout_gravity="end"
+            android:background="@drawable/edt_background"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/activity_edit_profile_hint_phone"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/activity_edit_profile_txt_title_3"
+            style="@style/title_13_black_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_detail_coex_back_margin_left"
+            android:layout_marginBottom="@dimen/activity_detail_coex_back_margin_left"
+            android:text="@string/activity_edit_profile_txt_confirm_pass" />
+
+        <EditText
+            android:id="@+id/activity_edit_profile_edt_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_booking_edittext_height"
+            android:layout_gravity="end"
+            android:background="@drawable/edt_background"
+            android:fontFamily="@font/roboto_light"
+            android:hint="@string/activity_edit_profile_hint_confirm_pass"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_edit_profile_btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_edit_profile_btn_height"
+        android:layout_marginLeft="@dimen/activity_booking_margin"
+        android:layout_marginTop="@dimen/activity_detail_coex_back_margin_left"
+        android:layout_marginRight="@dimen/activity_booking_margin"
+        android:background="@drawable/btn_normal_background"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/activity_edit_profile_btn_submit"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

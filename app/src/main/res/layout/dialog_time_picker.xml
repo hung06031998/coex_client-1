@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/text_margin_left"
+    android:layout_marginRight="@dimen/text_margin_left"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_title_height">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/dialog_style_room_txt_title"
+                style="@style/title_14_pink_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Time picker" />
+
+            <ImageView
+                android:id="@+id/dialog_pick_date_btn_close"
+                android:layout_width="@dimen/activity_booking_btn_back_height"
+                android:layout_height="@dimen/activity_booking_btn_back_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dialog_margin"
+                android:src="@drawable/ic_close_black_24dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.upit.coex.user.template.widget.CalendarView
+        android:id="@+id/dialog_time_picker_calender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_card_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_item_style_room_background" />
+
+    <RelativeLayout
+        android:id="@+id/layout_card_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/dialog_time_picker_calender"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Choose hour"
+            android:textColor="@color/colorRed"
+            android:textSize="14sp" />
+
+        <cn.jeesoft.widget.pickerview.CharacterPickerView
+            android:id="@+id/dialog_time_picker_spinner"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/text_margin_left"
+            android:layout_marginRight="@dimen/text_margin_left" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_card_view_2">
+
+        <Button
+            android:id="@+id/dialog_time_picker_btn_ok"
+            android:layout_width="@dimen/activity_booking_button_width"
+            android:layout_height="@dimen/activity_booking_button_hieght"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/text_margin_top"
+            android:background="@drawable/btn_normal_background"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/dialog_time_picler_btn_choose"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

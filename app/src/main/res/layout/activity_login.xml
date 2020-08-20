@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/blurbb">
+
+    <RelativeLayout
+        android:id="@+id/activity_login_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"></RelativeLayout>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="106dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin"
+            android:src="@drawable/coex" />
+
+        <TextView
+            android:id="@+id/forpartner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/login_activity_role_margin_top"
+            android:text="@string/used"
+            android:textAppearance="@style/textForPartner"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_marginLeft="@dimen/marginStartContext"
+            android:layout_marginTop="@dimen/marginTopLogo"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/email"
+            android:textAppearance="@style/textNormal"
+            android:textSize="@dimen/login_activity_small_font_size"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_activity_input_height"
+            android:layout_below="@id/txtEmail"
+            android:layout_alignLeft="@id/txtEmail"
+            android:layout_marginTop="@dimen/marginTextContent"
+            android:layout_marginRight="@dimen/marginStartContext"
+            android:background="@drawable/edt_background"
+            android:fontFamily="@font/roboto_bold"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingStart="@dimen/login_activity_input_padding_left"
+            android:paddingEnd="@dimen/login_activity_input_padding_right"
+            android:scrollHorizontally="true"
+            android:textSize="16dp"
+            android:letterSpacing="0.04"/>
+
+        <TextView
+            android:id="@+id/txtPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtEmail"
+            android:layout_alignLeft="@id/txtEmail"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/password"
+            android:textAppearance="@style/textNormal"
+            android:textSize="@dimen/login_activity_small_font_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/txtPassword"
+            android:layout_alignRight="@id/edtEmail"
+            android:layout_alignBottom="@id/txtPassword"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="right"
+            android:text="@string/forgot_password"
+            android:textAppearance="@style/textNormal"
+            android:textSize="@dimen/login_activity_small_font_size"
+            android:textStyle="italic"
+            android:paddingRight="4dp"/>
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_activity_input_height"
+            android:layout_below="@id/txtPassword"
+            android:layout_alignLeft="@id/txtEmail"
+            android:layout_alignRight="@id/edtEmail"
+            android:layout_marginTop="@dimen/marginTextContent"
+            android:background="@drawable/edt_background"
+            android:fontFamily="@font/roboto_bold"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingStart="@dimen/login_activity_input_padding_left"
+            android:paddingEnd="@dimen/login_activity_input_padding_right"
+            android:scrollHorizontally="true"
+            android:textSize="16dp"
+            android:letterSpacing="0.04"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtPassword"
+            android:layout_alignLeft="@id/edtEmail"
+            android:layout_alignRight="@id/edtEmail"
+            android:layout_marginTop="@dimen/marginbtn"
+            android:background="@drawable/btn_normal_background"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/btnLogin"
+            android:textSize="14dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/roboto_bold_italic"
+            android:gravity="center"
+            android:text="@string/txtLogin"
+            android:textAppearance="@style/textLink"
+            android:textStyle="italic"
+            android:textSize="14dp"/>
+    </RelativeLayout>
+</RelativeLayout>

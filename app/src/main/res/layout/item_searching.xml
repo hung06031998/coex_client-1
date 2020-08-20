@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/text_margin_top"
+    android:background="@drawable/bg_item_style_room_background"
+    android:orientation="vertical"
+    android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="@dimen/detail_coex_type_1_margin"
+        android:layout_marginTop="@dimen/detail_coex_margin_top"
+        android:layout_marginRight="@dimen/detail_coex_type_1_margin"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/item_searching_img_main"
+            android:layout_width="100dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="@dimen/detail_coex_type_1_image_margin"
+            android:background="@drawable/bg_no_image_big"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="@dimen/detail_coex_weight"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_searching_txt_name_coo"
+                style="@style/title_14_pink_bold"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:text="COEX Working" />
+
+            <TextView
+                android:id="@+id/item_schedule_txt_description"
+                style="@style/title_13_silver_black_regular"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:text="No.1 Pham Van Bach, Yen Hoa, Cau Giay, Ha Noi." />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/title_13_black_regular"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:maxLines="1"
+                    android:text="Distance :" />
+
+                <TextView
+                    android:id="@+id/item_searching_txt_distance"
+                    style="@style/title_13_silver_black_regular"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/detail_coex_type_1_margin"
+                    android:maxLines="1"
+                    android:text="10 km" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/silver">
+
+    </ImageView>
+</LinearLayout>

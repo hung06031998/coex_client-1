@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.upit.coex.user">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".CoexApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleTop"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:appComponentFactory">
+        <activity android:name=".screen.register.RegisterActivity"></activity>
+        <activity android:name=".screen.forgetpassword.ForgetPasswordActivity" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDS8IDvNfK_UldH1ro-YzikPmWKuu8o6DU" /> <!-- <meta-data -->
+        <activity
+            android:name=".screen.map.activity.MapActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".screen.splash.activity.SplashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".screen.addinfomation.AddInfomationActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screen.pandr.ActivityPAndR"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screen.detail.activity.DetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screen.wallet.activity.HistoryExchangeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screen.withdraw.WithdrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".screen.vnpay.VnpayPaymentActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screen.wallet.activity.WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".screen.detail.activity.DetailCOEXActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".screen.profile.ProfileActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screen.forgetpassword.ForgetPasswordActivity"
+            tools:ignore="DuplicateActivity" />
+
+        <activity
+            android:name=".screen.profile.ChangeDataAccountActivity"
+            tools:ignore="DuplicateActivity" />
+
+        <activity
+            android:name=".screen.register.RegisterActivity"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name=".screen.login.activity.LoginActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".screen.booking.BookingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screen.wallet.activity.AddToCardActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".screen.exchange.to.coin.ExchangeToCoinActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/coex_user" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/main_color" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <service
+            android:name=".service.firebase.CoexFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="vn.zalopay.sdk.MerchantReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="vn.zalopay.sdk.ZP_ACTION" />
+                <category android:name="zlp" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

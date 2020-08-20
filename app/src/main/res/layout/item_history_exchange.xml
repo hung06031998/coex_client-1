@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    android:background="@drawable/bg_item_style_room_background">
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/text_margin_left">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_item_history_schedule" />
+
+        <ImageView
+            android:id="@+id/item_history_img_main"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="@dimen/text_margin_top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_access_time_black_24dp" />
+
+            <TextView
+                android:id="@+id/item_history_txt_date"
+                style="@style/title_16_black_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:text="Ahiuhiuhiu"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_history_txt_time"
+            style="@style/title_9_silverblack_regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="0dp"
+            android:text="Ahiuhiuhiu"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_history_txt_money"
+        style="@style/title_16_black_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="10dp"
+        android:maxLines="1"
+        android:text="ahiu" />
+
+</RelativeLayout>

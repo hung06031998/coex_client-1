@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/text_margin_left"
+    android:layout_marginTop="@dimen/text_margin_top"
+    android:layout_marginRight="@dimen/text_margin_left"
+    android:background="@drawable/layout_cover_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_wallet_card_txt_card_name"
+        style="@style/title_12_blue_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/description_margin_left"
+        android:layout_marginTop="@dimen/description_margin_left"
+        android:text="STORM NGUYEN VU TIEN DUNG"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/item_wallet_card_txt_address"
+        style="@style/title_13_black_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_wallet_card_txt_card_name"
+        android:layout_marginLeft="@dimen/description_margin_left"
+        android:layout_marginTop="@dimen/text_margin_top"
+        android:maxLines="1"
+        android:layout_marginBottom="@dimen/text_margin_top"
+        android:text="123 *** **** 789" />
+
+    <TextView
+        android:id="@+id/item_wallet_card_text_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/text_margin_top"
+        android:layout_marginRight="@dimen/text_margin_top"
+        android:paddingLeft="10dp"
+        android:text="&#8942;"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+</RelativeLayout>
